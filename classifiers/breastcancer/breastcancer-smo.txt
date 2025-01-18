@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     breast-cancer
+Instances:    286
+Attributes:   10
+              age
+              menopause
+              tumor-size
+              inv-nodes
+              node-caps
+              deg-malig
+              breast
+              breast-quad
+              irradiat
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: no-recurrence-events, recurrence-events
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0026 * (normalized) age=20-29
+ +      -0.0438 * (normalized) age=30-39
+ +      -0.1693 * (normalized) age=40-49
+ +      -0.1756 * (normalized) age=50-59
+ +       0.3913 * (normalized) age=60-69
+ +       0      * (normalized) age=70-79
+ +      -0.2931 * (normalized) menopause=lt40
+ +      -0.0716 * (normalized) menopause=ge40
+ +       0.3647 * (normalized) menopause=premeno
+ +       0      * (normalized) tumor-size=0-4
+ +       0      * (normalized) tumor-size=5-9
+ +      -0.2108 * (normalized) tumor-size=10-14
+ +       0.0658 * (normalized) tumor-size=15-19
+ +      -0.025  * (normalized) tumor-size=20-24
+ +       0.1073 * (normalized) tumor-size=25-29
+ +       0.1979 * (normalized) tumor-size=30-34
+ +      -0.2456 * (normalized) tumor-size=35-39
+ +      -0.1217 * (normalized) tumor-size=40-44
+ +       0.232  * (normalized) tumor-size=50-54
+ +      -0.5056 * (normalized) inv-nodes=0-2
+ +      -0.0489 * (normalized) inv-nodes=3-5
+ +       0.2666 * (normalized) inv-nodes=6-8
+ +       0.2645 * (normalized) inv-nodes=9-11
+ +       0.076  * (normalized) inv-nodes=12-14
+ +      -0.0526 * (normalized) inv-nodes=15-17
+ +      -0.5631 * (normalized) node-caps=no
+ +      -0.2523 * (normalized) deg-malig=1
+ +      -0.383  * (normalized) deg-malig=2
+ +       0.6353 * (normalized) deg-malig=3
+ +      -0.0981 * (normalized) breast=right
+ +      -0.2391 * (normalized) breast-quad=left_up
+ +      -0.0178 * (normalized) breast-quad=left_low
+ +       0.3913 * (normalized) breast-quad=right_up
+ +       0.0153 * (normalized) breast-quad=right_low
+ +      -0.1497 * (normalized) breast-quad=central
+ +      -0.0925 * (normalized) irradiat=no
+ +       0.1347
+
+Number of kernel evaluations: 33776 (91.653% cached)
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         199               69.5804 %
+Incorrectly Classified Instances        87               30.4196 %
+Kappa statistic                          0.1983
+Mean absolute error                      0.3042
+Root mean squared error                  0.5515
+Relative absolute error                 72.7021 %
+Root relative squared error            120.6668 %
+Total Number of Instances              286     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,851    0,671    0,750      0,851    0,797      0,205    0,590     0,743     no-recurrence-events
+                 0,329    0,149    0,483      0,329    0,392      0,205    0,590     0,358     recurrence-events
+Weighted Avg.    0,696    0,516    0,671      0,696    0,677      0,205    0,590     0,629     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 171  30 |   a = no-recurrence-events
+  57  28 |   b = recurrence-events
+

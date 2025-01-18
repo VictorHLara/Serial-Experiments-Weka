@@ -1,0 +1,282 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     hypothyroid
+Instances:    3772
+Attributes:   30
+              age
+              sex
+              on thyroxine
+              query on thyroxine
+              on antithyroid medication
+              sick
+              pregnant
+              thyroid surgery
+              I131 treatment
+              query hypothyroid
+              query hyperthyroid
+              lithium
+              goitre
+              tumor
+              hypopituitary
+              psych
+              TSH measured
+              TSH
+              T3 measured
+              T3
+              TT4 measured
+              TT4
+              T4U measured
+              T4U
+              FTI measured
+              FTI
+              TBG measured
+              TBG
+              referral source
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, compensated_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0021 * (normalized) age
+ +      -0.0028 * (normalized) sex=M
+ +      -0.6297 * (normalized) on thyroxine=t
+ +       0.0052 * (normalized) query on thyroxine=t
+ +      -0.0118 * (normalized) on antithyroid medication=t
+ +      -0.0032 * (normalized) sick=t
+ +      -0.0009 * (normalized) pregnant=t
+ +      -0.8107 * (normalized) thyroid surgery=t
+ +      -0.0123 * (normalized) I131 treatment=t
+ +       0.007  * (normalized) query hypothyroid=t
+ +       0.0043 * (normalized) query hyperthyroid=t
+ +      -0.0045 * (normalized) lithium=t
+ +      -0.0102 * (normalized) goitre=t
+ +       0.0077 * (normalized) tumor=t
+ +       0.0028 * (normalized) psych=t
+ +      -0.0229 * (normalized) TSH measured=f
+ +       2.9273 * (normalized) TSH
+ +       0.0025 * (normalized) T3 measured=f
+ +      -0.0408 * (normalized) T3
+ +       0.0032 * (normalized) TT4 measured=f
+ +      -0.1383 * (normalized) TT4
+ +       0.0001 * (normalized) T4U measured=f
+ +       0.0555 * (normalized) T4U
+ +       0.0001 * (normalized) FTI measured=f
+ +       0.0347 * (normalized) FTI
+ +       0.0004 * (normalized) referral source=SVHC
+ +       0.0039 * (normalized) referral source=other
+ +       0.0004 * (normalized) referral source=SVI
+ +      -0.0097 * (normalized) referral source=STMW
+ +       0.005  * (normalized) referral source=SVHD
+ -       1.015 
+
+Number of kernel evaluations: 2476592 (84.696% cached)
+
+Classifier for classes: negative, primary_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3767 * (normalized) age
+ +      -0.1863 * (normalized) sex=M
+ +      -0.1952 * (normalized) on thyroxine=t
+ +      -0.1345 * (normalized) query on thyroxine=t
+ +      -0.0551 * (normalized) on antithyroid medication=t
+ +      -0.2876 * (normalized) sick=t
+ +      -0.287  * (normalized) pregnant=t
+ +      -1      * (normalized) thyroid surgery=t
+ +       0.1062 * (normalized) I131 treatment=t
+ +       0.1112 * (normalized) query hypothyroid=t
+ +      -0.1624 * (normalized) query hyperthyroid=t
+ +       0      * (normalized) lithium=t
+ +      -0.2642 * (normalized) goitre=t
+ +       0.2674 * (normalized) tumor=t
+ +      -0.1345 * (normalized) hypopituitary=t
+ +      -0.064  * (normalized) psych=t
+ +      -0.3394 * (normalized) TSH measured=f
+ +       4.9467 * (normalized) TSH
+ +      -0.0399 * (normalized) T3 measured=f
+ +      -1.5069 * (normalized) T3
+ +       0.3641 * (normalized) TT4 measured=f
+ +      -3.3428 * (normalized) TT4
+ +       0.182  * (normalized) T4U measured=f
+ +       0.8776 * (normalized) T4U
+ +       0.182  * (normalized) FTI measured=f
+ +      -3.7806 * (normalized) FTI
+ +      -0.064  * (normalized) referral source=SVHC
+ +       0.0283 * (normalized) referral source=other
+ +       0.0564 * (normalized) referral source=SVI
+ +      -0.0207 * (normalized) referral source=STMW
+ +      -0      * (normalized) referral source=SVHD
+ +       0.1221
+
+Number of kernel evaluations: 557706 (67.521% cached)
+
+Classifier for classes: negative, secondary_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0232 * (normalized) age
+ +       0.0004 * (normalized) sex=M
+ +      -0.0054 * (normalized) on thyroxine=t
+ +      -0      * (normalized) query on thyroxine=t
+ +      -0      * (normalized) on antithyroid medication=t
+ +      -0      * (normalized) sick=t
+ +      -0.0137 * (normalized) thyroid surgery=t
+ +       0      * (normalized) I131 treatment=t
+ +       0.0115 * (normalized) query hypothyroid=t
+ +      -0      * (normalized) query hyperthyroid=t
+ +      -0.0017 * (normalized) psych=t
+ +      -0      * (normalized) TSH measured=f
+ +      -0.0056 * (normalized) TSH
+ +      -0.0084 * (normalized) T3 measured=f
+ +      -0.0364 * (normalized) T3
+ +      -0      * (normalized) TT4 measured=f
+ +      -0.1315 * (normalized) TT4
+ +       0.0073 * (normalized) T4U measured=f
+ +       0.014  * (normalized) T4U
+ +       0.0073 * (normalized) FTI measured=f
+ +      -0.049  * (normalized) FTI
+ +      -0.0017 * (normalized) referral source=SVHC
+ +       0.0068 * (normalized) referral source=other
+ +      -0.005  * (normalized) referral source=SVI
+ +       0      * (normalized) referral source=STMW
+ -       0.9851
+
+Number of kernel evaluations: 76073 (59.479% cached)
+
+Classifier for classes: compensated_hypothyroid, primary_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3357 * (normalized) age
+ +      -0.0353 * (normalized) sex=M
+ +       1.2481 * (normalized) on thyroxine=t
+ +      -0.2067 * (normalized) query on thyroxine=t
+ +      -0.1372 * (normalized) on antithyroid medication=t
+ +      -0.2317 * (normalized) sick=t
+ +       1      * (normalized) thyroid surgery=t
+ +      -0.1057 * (normalized) query hypothyroid=t
+ +      -0.2598 * (normalized) query hyperthyroid=t
+ +       0.0788 * (normalized) tumor=t
+ +      -0.2317 * (normalized) psych=t
+ +       3.0581 * (normalized) TSH
+ +       0.1223 * (normalized) T3 measured=f
+ +      -2.3942 * (normalized) T3
+ +       1      * (normalized) TT4 measured=f
+ +      -4.1345 * (normalized) TT4
+ +       0.1256 * (normalized) T4U measured=f
+ +       0.938  * (normalized) T4U
+ +       0.1256 * (normalized) FTI measured=f
+ +      -4.4234 * (normalized) FTI
+ +      -0.0369 * (normalized) referral source=SVHC
+ +      -0.1075 * (normalized) referral source=other
+ +       0.1444 * (normalized) referral source=SVI
+ +       0.7519
+
+Number of kernel evaluations: 17452 (85.41% cached)
+
+Classifier for classes: compensated_hypothyroid, secondary_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0323 * (normalized) age
+ +      -0.0004 * (normalized) sex=M
+ +       0      * (normalized) sick=t
+ +       0.0041 * (normalized) query hypothyroid=t
+ +      -0      * (normalized) query hyperthyroid=t
+ +      -0.0015 * (normalized) tumor=t
+ +      -0.0005 * (normalized) psych=t
+ +      -0.0322 * (normalized) TSH
+ +      -0.0007 * (normalized) T3 measured=f
+ +       0.0175 * (normalized) T3
+ +      -0.1496 * (normalized) TT4
+ +       0.0031 * (normalized) T4U measured=f
+ +      -0.0293 * (normalized) T4U
+ +       0.0031 * (normalized) FTI measured=f
+ +      -0.0383 * (normalized) FTI
+ +      -0.0005 * (normalized) referral source=SVHC
+ +       0.0052 * (normalized) referral source=other
+ +      -0.0047 * (normalized) referral source=SVI
+ +      -0      * (normalized) referral source=SVHD
+ -       0.9735
+
+Number of kernel evaluations: 2502 (79.587% cached)
+
+Classifier for classes: primary_hypothyroid, secondary_hypothyroid
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0125 * (normalized) age
+ +       0.037  * (normalized) sex=M
+ +      -0.0442 * (normalized) on thyroxine=t
+ +       0.0446 * (normalized) query hypothyroid=t
+ +      -0.1229 * (normalized) TSH
+ +      -0.1259 * (normalized) T3 measured=f
+ +       0.0103 * (normalized) T3
+ +      -0.1259 * (normalized) TT4 measured=f
+ +      -0.0742 * (normalized) TT4
+ +       0.4715 * (normalized) T4U measured=f
+ +      -0.0308 * (normalized) T4U
+ +       0.4715 * (normalized) FTI measured=f
+ +       0.0717 * (normalized) FTI
+ +       0.5285 * (normalized) referral source=other
+ +      -0.4026 * (normalized) referral source=SVI
+ +      -0.1259 * (normalized) referral source=STMW
+ -       1.5564
+
+Number of kernel evaluations: 786 (82.108% cached)
+
+
+
+Time taken to build model: 1.39 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3531               93.6108 %
+Incorrectly Classified Instances       241                6.3892 %
+Kappa statistic                          0.292 
+Mean absolute error                      0.256 
+Root mean squared error                  0.3213
+Relative absolute error                351.2674 %
+Root relative squared error            168.7332 %
+Total Number of Instances             3772     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,999    0,818    0,936      0,999    0,967      0,404    0,591     0,936     negative
+                 0,000    0,000    ?          0,000    ?          ?        0,519     0,053     compensated_hypothyroid
+                 0,547    0,001    0,945      0,547    0,693      0,714    0,860     0,589     primary_hypothyroid
+                 0,000    0,000    ?          0,000    ?          ?        0,499     0,001     secondary_hypothyroid
+Weighted Avg.    0,936    0,755    ?          0,936    ?          ?        0,594     0,881     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3479    0    2    0 |    a = negative
+  193    0    1    0 |    b = compensated_hypothyroid
+   43    0   52    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+

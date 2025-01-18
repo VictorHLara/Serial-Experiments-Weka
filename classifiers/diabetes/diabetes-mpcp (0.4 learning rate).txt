@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.4 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.1761105698807124
+    Node 2    1.4147292497072796
+    Node 3    7.541066748834766
+    Node 4    2.618527318286529
+    Node 5    2.9914622593425153
+    Node 6    -3.7868783848806253
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.1761105720668157
+    Node 2    -1.4147292516583438
+    Node 3    -7.541066793640217
+    Node 4    -2.618527318846152
+    Node 5    -2.9914622611309376
+    Node 6    3.786878387184123
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.9575624785488297
+    Attrib preg    0.28317225123708567
+    Attrib plas    -15.426604246955145
+    Attrib pres    -4.307175589446946
+    Attrib skin    6.030012616393207
+    Attrib insu    -13.681119917169609
+    Attrib mass    -7.471485728809144
+    Attrib pedi    -8.434312680523549
+    Attrib age    1.7098626364906584
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -5.589780714639379
+    Attrib preg    3.2606894000891256
+    Attrib plas    1.692387563709195
+    Attrib pres    -2.8284075593682454
+    Attrib skin    -7.4159414394906085
+    Attrib insu    0.4331771222869015
+    Attrib mass    -2.5583982981697764
+    Attrib pedi    10.09023538334085
+    Attrib age    7.121044165337931
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.071222459787434
+    Attrib preg    0.9465137614517951
+    Attrib plas    -18.8315855082013
+    Attrib pres    -9.494787375261103
+    Attrib skin    7.458301611822054
+    Attrib insu    -7.2625033377834045
+    Attrib mass    -11.461367652863695
+    Attrib pedi    -6.0863658076957625
+    Attrib age    5.788288647720562
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.9298853481280944
+    Attrib preg    12.233682348642233
+    Attrib plas    -16.211723517227142
+    Attrib pres    6.818411987090279
+    Attrib skin    -1.720205173177231
+    Attrib insu    2.8367018984615298
+    Attrib mass    -6.5303849970456715
+    Attrib pedi    -0.3370206344262821
+    Attrib age    -23.16311266916182
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.818201482945531
+    Attrib preg    15.206021317010853
+    Attrib plas    -2.109706426681511
+    Attrib pres    -7.06795945471596
+    Attrib skin    1.2384030281133174
+    Attrib insu    -8.448509937428858
+    Attrib mass    7.309990602020379
+    Attrib pedi    2.5551744533109444
+    Attrib age    -10.85347443926366
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         580               75.5208 %
+Incorrectly Classified Instances       188               24.4792 %
+Kappa statistic                          0.4498
+Mean absolute error                      0.2921
+Root mean squared error                  0.4231
+Relative absolute error                 64.2722 %
+Root relative squared error             88.7683 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,836    0,396    0,798      0,836    0,816      0,451    0,797     0,864     tested_negative
+                 0,604    0,164    0,664      0,604    0,633      0,451    0,797     0,667     tested_positive
+Weighted Avg.    0,755    0,315    0,751      0,755    0,752      0,451    0,797     0,795     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 418  82 |   a = tested_negative
+ 106 162 |   b = tested_positive
+

@@ -1,0 +1,233 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     hypothyroid
+Instances:    3772
+Attributes:   30
+              age
+              sex
+              on thyroxine
+              query on thyroxine
+              on antithyroid medication
+              sick
+              pregnant
+              thyroid surgery
+              I131 treatment
+              query hypothyroid
+              query hyperthyroid
+              lithium
+              goitre
+              tumor
+              hypopituitary
+              psych
+              TSH measured
+              TSH
+              T3 measured
+              T3
+              TT4 measured
+              TT4
+              T4U measured
+              T4U
+              FTI measured
+              FTI
+              TBG measured
+              TBG
+              referral source
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                              Class
+Attribute                                  negative compensated_hypothyroid     primary_hypothyroid   secondary_hypothyroid
+                                             (0.92)                  (0.05)                  (0.03)                     (0)
+============================================================================================================================
+age
+  mean                                       51.8081                  52.324                 50.3348                 41.9457
+  std. dev.                                  20.3449                 19.5296                 18.7207                  2.4674
+  weight sum                                    3480                     194                      95                       2
+  precision                                   4.9348                  4.9348                  4.9348                  4.9348
+
+sex
+  F                                           2266.0                   146.0                    70.0                     2.0
+  M                                           1078.0                    43.0                    23.0                     2.0
+  [total]                                     3344.0                   189.0                    93.0                     4.0
+
+on thyroxine
+  f                                           3027.0                   195.0                    87.0                     3.0
+  t                                            456.0                     1.0                    10.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+query on thyroxine
+  f                                           3435.0                   192.0                    96.0                     3.0
+  t                                             48.0                     4.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+on antithyroid medication
+  f                                           3440.0                   194.0                    96.0                     3.0
+  t                                             43.0                     2.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+sick
+  f                                           3346.0                   184.0                    96.0                     3.0
+  t                                            137.0                    12.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+pregnant
+  f                                           3429.0                   195.0                    96.0                     3.0
+  t                                             54.0                     1.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+thyroid surgery
+  f                                           3431.0                   195.0                    94.0                     3.0
+  t                                             52.0                     1.0                     3.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+I131 treatment
+  f                                           3428.0                   192.0                    94.0                     3.0
+  t                                             55.0                     4.0                     3.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+query hypothyroid
+  f                                           3287.0                   168.0                    85.0                     2.0
+  t                                            196.0                    28.0                    12.0                     2.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+query hyperthyroid
+  f                                           3260.0                   183.0                    93.0                     3.0
+  t                                            223.0                    13.0                     4.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+lithium
+  f                                           3465.0                   194.0                    96.0                     3.0
+  t                                             18.0                     2.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+goitre
+  f                                           3448.0                   195.0                    96.0                     3.0
+  t                                             35.0                     1.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+tumor
+  f                                           3394.0                   189.0                    94.0                     3.0
+  t                                             89.0                     7.0                     3.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+hypopituitary
+  f                                           3481.0                   195.0                    96.0                     3.0
+  t                                              2.0                     1.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+psych
+  f                                           3306.0                   187.0                    96.0                     3.0
+  t                                            177.0                     9.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+TSH measured
+  t                                           3113.0                   195.0                    96.0                     3.0
+  f                                            370.0                     1.0                     1.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+TSH
+  mean                                        1.8496                 13.7361                 91.7202                  1.8531
+  std. dev.                                   4.7925                 13.1891                111.5062                  1.8531
+  weight sum                                    3112                     194                      95                       2
+  precision                                   1.8531                  1.8531                  1.8531                  1.8531
+
+T3 measured
+  t                                           2759.0                   158.0                    87.0                     3.0
+  f                                            724.0                    38.0                    10.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+T3
+  mean                                        2.0632                   1.757                   0.967                  1.8618
+  std. dev.                                   0.8149                  0.6581                  0.6615                  0.6206
+  weight sum                                    2758                     157                      86                       2
+  precision                                   0.1551                  0.1551                  0.1551                  0.1551
+
+TT4 measured
+  t                                           3256.0                   193.0                    93.0                     3.0
+  f                                            227.0                     3.0                     4.0                     1.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+TT4
+  mean                                      111.4334                 91.9253                 34.1159                  34.775
+  std. dev.                                  33.9583                 22.0149                 21.6253                  13.375
+  weight sum                                    3255                     192                      92                       2
+  precision                                   1.7833                  1.7833                  1.7833                  1.7833
+
+T4U measured
+  t                                           3120.0                   178.0                    89.0                     2.0
+  f                                            363.0                    18.0                     8.0                     2.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+T4U
+  mean                                        0.9933                  1.0033                  1.0392                  0.8851
+  std. dev.                                   0.1962                  0.1828                  0.1868                  0.0024
+  weight sum                                    3119                     177                      88                       1
+  precision                                   0.0143                  0.0143                  0.0143                  0.0143
+
+FTI measured
+  t                                           3122.0                   178.0                    89.0                     2.0
+  f                                            361.0                    18.0                     8.0                     2.0
+  [total]                                     3483.0                   196.0                    97.0                     4.0
+
+FTI
+  mean                                      113.6485                 92.7968                 34.0981                 53.9742
+  std. dev.                                  31.0681                 18.1197                 20.1819                  0.2811
+  weight sum                                    3121                     177                      88                       1
+  precision                                   1.6867                  1.6867                  1.6867                  1.6867
+
+TBG measured
+  f                                           3482.0                   195.0                    96.0                     3.0
+  [total]                                     3482.0                   195.0                    96.0                     3.0
+
+TBG
+  mean                                             0                       0                       0                       0
+  std. dev.                                   0.0017                  0.0017                  0.0017                  0.0017
+  weight sum                                       0                       0                       0                       0
+  precision                                     0.01                    0.01                    0.01                    0.01
+
+referral source
+  SVHC                                         376.0                    11.0                     2.0                     1.0
+  other                                       2029.0                   120.0                    53.0                     3.0
+  SVI                                          938.0                    59.0                    40.0                     1.0
+  STMW                                         106.0                     5.0                     4.0                     1.0
+  SVHD                                          37.0                     4.0                     1.0                     1.0
+  [total]                                     3486.0                   199.0                   100.0                     7.0
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3594               95.281  %
+Incorrectly Classified Instances       178                4.719  %
+Kappa statistic                          0.6008
+Mean absolute error                      0.0357
+Root mean squared error                  0.1382
+Relative absolute error                 48.9161 %
+Root relative squared error             72.5471 %
+Total Number of Instances             3772     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,993    0,485    0,961      0,993    0,977      0,645    0,930     0,992     negative
+                 0,320    0,007    0,721      0,320    0,443      0,463    0,900     0,534     compensated_hypothyroid
+                 0,800    0,003    0,874      0,800    0,835      0,832    0,995     0,865     primary_hypothyroid
+                 0,000    0,001    0,000      0,000    0,000      -0,001   0,288     0,001     secondary_hypothyroid
+Weighted Avg.    0,953    0,448    0,946      0,953    0,945      0,640    0,929     0,965     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3456   14    9    2 |    a = negative
+  130   62    2    0 |    b = compensated_hypothyroid
+    9   10   76    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+
