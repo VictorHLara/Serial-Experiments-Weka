@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=9 #classindex=8
+Network structure (nodes followed by parents)
+preg(2): class 
+plas(4): class 
+pres(1): class 
+skin(1): class 
+insu(3): class 
+mass(2): class 
+pedi(2): class 
+age(2): class 
+class(2): 
+LogScore Bayes: -4030.960854130862
+LogScore BDeu: -4053.744069918824
+LogScore MDL: -4054.1531320488457
+LogScore ENTROPY: -3991.037129583943
+LogScore AIC: -4010.037129583943
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         571               74.349  %
+Incorrectly Classified Instances       197               25.651  %
+Kappa statistic                          0.429 
+Mean absolute error                      0.2987
+Root mean squared error                  0.4208
+Relative absolute error                 65.7116 %
+Root relative squared error             88.28   %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.816     0.392      0.795     0.816     0.806      0.806    tested_negative
+                 0.608     0.184      0.639     0.608     0.623      0.806    tested_positive
+Weighted Avg.    0.743     0.319      0.741     0.743     0.742      0.806
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 408  92 |   a = tested_negative
+ 105 163 |   b = tested_positive
+
+

@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     hypothyroid
+Instances:    3772
+Attributes:   30
+              age
+              sex
+              on thyroxine
+              query on thyroxine
+              on antithyroid medication
+              sick
+              pregnant
+              thyroid surgery
+              I131 treatment
+              query hypothyroid
+              query hyperthyroid
+              lithium
+              goitre
+              tumor
+              hypopituitary
+              psych
+              TSH measured
+              TSH
+              T3 measured
+              T3
+              TT4 measured
+              TT4
+              T4U measured
+              T4U
+              FTI measured
+              FTI
+              TBG measured
+              TBG
+              referral source
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=30 #classindex=29
+Network structure (nodes followed by parents)
+age(1): Class 
+sex(2): Class 
+on thyroxine(2): Class 
+query on thyroxine(2): Class 
+on antithyroid medication(2): Class 
+sick(2): Class 
+pregnant(2): Class 
+thyroid surgery(2): Class 
+I131 treatment(2): Class 
+query hypothyroid(2): Class 
+query hyperthyroid(2): Class 
+lithium(2): Class 
+goitre(2): Class 
+tumor(2): Class 
+hypopituitary(2): Class 
+psych(2): Class 
+TSH measured(2): Class 
+TSH(4): Class 
+T3 measured(2): Class 
+T3(3): Class 
+TT4 measured(2): Class 
+TT4(6): Class 
+T4U measured(2): Class 
+T4U(1): Class 
+FTI measured(2): Class 
+FTI(5): Class 
+TBG measured(1): Class 
+TBG(1): Class 
+referral source(5): Class 
+Class(4): 
+LogScore Bayes: -29286.076203253557
+LogScore BDeu: -29611.200986222455
+LogScore MDL: -29816.503686177814
+LogScore ENTROPY: -29178.26323628693
+LogScore AIC: -29333.26323628693
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3719               98.5949 %
+Incorrectly Classified Instances        53                1.4051 %
+Kappa statistic                          0.9028
+Mean absolute error                      0.011 
+Root mean squared error                  0.075 
+Relative absolute error                 15.135  %
+Root relative squared error             39.3888 %
+Total Number of Instances             3772     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.993     0.086      0.993     0.993     0.993      0.997    negative
+                 0.892     0.004      0.93      0.892     0.911      0.999    compensated_hypothyroid
+                 0.926     0.004      0.854     0.926     0.889      0.996    primary_hypothyroid
+                 0         0          0         0         0          0.749    secondary_hypothyroid
+Weighted Avg.    0.986     0.08       0.986     0.986     0.986      0.997
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3458    9   14    0 |    a = negative
+   20  173    1    0 |    b = compensated_hypothyroid
+    3    4   88    0 |    c = primary_hypothyroid
+    2    0    0    0 |    d = secondary_hypothyroid
+
+

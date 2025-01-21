@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     breast-cancer
+Instances:    286
+Attributes:   10
+              age
+              menopause
+              tumor-size
+              inv-nodes
+              node-caps
+              deg-malig
+              breast
+              breast-quad
+              irradiat
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=10 #classindex=9
+Network structure (nodes followed by parents)
+age(9): Class 
+menopause(3): Class 
+tumor-size(12): Class 
+inv-nodes(13): Class 
+node-caps(2): Class 
+deg-malig(3): Class 
+breast(2): Class 
+breast-quad(5): Class 
+irradiat(2): Class 
+Class(2): 
+LogScore Bayes: -2972.614233802984
+LogScore BDeu: -3199.7964515891313
+LogScore MDL: -3200.3777157954187
+LogScore ENTROPY: -2959.998063835574
+LogScore AIC: -3044.9980638355746
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         206               72.028  %
+Incorrectly Classified Instances        80               27.972  %
+Kappa statistic                          0.2919
+Mean absolute error                      0.3297
+Root mean squared error                  0.4566
+Relative absolute error                 78.7898 %
+Root relative squared error             99.9047 %
+Total Number of Instances              286     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.841     0.565      0.779     0.841     0.809      0.698    no-recurrence-events
+                 0.435     0.159      0.536     0.435     0.481      0.698    recurrence-events
+Weighted Avg.    0.72      0.444      0.707     0.72      0.711      0.698
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 169  32 |   a = no-recurrence-events
+  48  37 |   b = recurrence-events
+
+
