@@ -21,5 +21,5 @@ sudo apt install weka
 ```
 
 ## Usage 
-Fell free to compare yor metrics obteined using the classifiers with ours.
+Fell free to compare yor metrics obtained using the classifiers with ours.
 
