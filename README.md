@@ -1,25 +1,36 @@
 # Serial Experiments Weka
 
-Welcome to the Serial Experiments Weka project! 
+Bem-vindo ao projeto **Serial Experiments Weka**! 🎛️  
 
-## Table of Contents
+## Índice  
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Introdução](#introdução)  
+- [Instalação](#instalação)  
+- [Uso](#uso)  
+- [Contribuição](#contribuição)  
+- [Licença](#licença)  
 
-## Introduction
+---
 
-Serial Experiments Weka is a collection of LOGS obtained in the Machine Learning tool WEKA using classifiers such as Random Forest, SMO, NaiveBayes, BayesNet, KNN and MLP in three different datasets.
+## Introdução  
 
-## Installation
+**Serial Experiments Weka** é uma coleção de logs obtidos na ferramenta de Machine Learning **WEKA**, utilizando diversos classificadores como:  
+- Random Forest  
+- SMO  
+- NaiveBayes  
+- BayesNet  
+- KNN  
+- MLP  
 
-To get started with WEKA, run this on your terminal or install weka on https://ml.cms.waikato.ac.nz/weka:
+Os experimentos foram realizados em três diferentes conjuntos de dados, fornecendo métricas comparativas úteis para quem trabalha com aprendizado de máquina.  
 
-```bash
-sudo apt install weka
-```
+---
 
-## Usage 
-Fell free to compare yor metrics obtained using the classifiers with ours.
+## Instalação  
 
+Para começar a usar o WEKA, você pode instalar via terminal (em distribuições baseadas em Linux) ou acessar o site oficial para download:  
+
+### Instalação via terminal:  
+
+```bash  
+sudo apt install weka  
