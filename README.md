@@ -33,7 +33,7 @@ https://ml.cms.waikato.ac.nz/weka
 
 Ou caso esteja no Linux, também poderá instalar pelo terminal:  
 
-### Instalação via terminal (Linux):  
+### Instalação via terminal (Ubuntu):  
 
 ```bash  
 sudo apt install weka  
