@@ -1,6 +1,6 @@
 # Serial Experiments Weka  
 
-Bem-vindo ao projeto **Serial Experiments Weka**! 🎛️  
+Bem-vindo ao projeto **Serial Experiments Weka**!
 
 Este projeto é uma coleção de logs obtidos na ferramenta de Machine Learning **WEKA** utilizando classificadores como Random Forest, SMO, NaiveBayes, BayesNet, KNN e MLP em três diferentes conjuntos de dados.  
 
